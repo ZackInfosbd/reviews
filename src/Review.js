@@ -31,10 +31,10 @@ const Review = () => {
 
   const randomPerson = () => {
     let myRandom = Math.ceil(Math.random() * people.length) - 1;
-    setIndex(myRandom);
     if (myRandom === index) {
       myRandom = index - 1;
     }
+    setIndex(checkNumber(myRandom));
   };
 
   return (
